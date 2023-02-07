@@ -2,6 +2,15 @@
 @{
     ViewBag.Title = "Home";
 }
+<p>Application Name: <strong>@ViewBag.ApplicationName</strong></p>
+<p>Environment Name: <strong>@ViewBag.Environment</strong></p>
+<p>Project Root Path: <strong>@ViewBag.Project_Path</strong></p>
+<p>Current Root Path: <strong>@ViewBag.Current_Root_Path</strong></p>
+
+<environment include="Staging">
+    <h1>Staging ...</h1>
+</environment>
+
 
 <h1>Home</h1>
 <h3>City List</h3>

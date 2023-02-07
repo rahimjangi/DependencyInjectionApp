@@ -1,0 +1,23 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "Home";
+}
+
+<h1>Home</h1>
+<h3>City List</h3>
+<table class="table w-100">
+    <thead>
+        <tr>
+            <th>City Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+            <td>@item</td>
+        </tr>
+        }
+        
+    </tbody>
+</table>
